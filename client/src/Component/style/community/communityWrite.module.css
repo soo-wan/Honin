@@ -1,0 +1,110 @@
+.container {
+  background-color: var(--white);
+  width: 70%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.editor_container {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 드롭다운 메뉴 */
+.category {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 4px var(--primary-color);
+}
+
+/* 제목 input */
+.title_input {
+  width: 98%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline-color: var(--primary-color);
+}
+
+/* 내용 input */
+.editor_textarea {
+  width: 98%;
+  resize: none;
+  height: 300px;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  outline-color: var(--primary-color);
+}
+
+/* 하단 버튼 컨테이너 */
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/* 돌아가기 버튼 */
+.back_btn {
+  color: var(--primary-color);
+  background: none;
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+}
+
+/* 우측 버튼 컨테이너 */
+.right_buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* 버튼 */
+.publish_btn,
+.back_btn {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* 게시글 올리기 버튼 */
+.publish_btn {
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+}
+
+.original_image img {
+  width: 100%;
+}

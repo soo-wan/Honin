@@ -1,0 +1,39 @@
+/* adminmain.module.css */
+
+.mainContainer {
+  display: flex;
+  height: 100vh; /* 화면 전체 높이 */
+}
+
+/* 콘텐츠 영역 스타일 */
+.content {
+  margin-left: 15rem; /* 서브메뉴 너비 만큼 여백을 추가 */
+  flex: 1; /* 나머지 공간을 차지 */
+  padding: 2rem; /* 패딩 */
+  background-color: #fff;
+  overflow-y: auto; /* 콘텐츠가 넘칠 때 스크롤 */
+}
+
+.btns {
+  margin-top: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-direction: column;
+}
+
+.btns button {
+  background-color: var(--primary-color);
+  color: white;
+  width: 10rem;
+  padding: 1rem;
+  margin: 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.btns button:hover {
+  background-color: var(--secondary-color);
+  color: var(--white);
+}

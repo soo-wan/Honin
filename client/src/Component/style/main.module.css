@@ -1,0 +1,384 @@
+.main_banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
+}
+/* .main_banner .text_container{
+    font-size: 4rem;  
+    line-height: 40rem;
+} */
+.main_banner img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.communityTitle {
+  display: flex;
+  /* width: 100vw; */
+}
+
+.communityTitle > span {
+  font-family: Pretendard-Regular;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #fff;
+  align-items: center; /* 수직 가운데 정렬 */
+}
+
+.replyCount > span {
+  margin-left: 0.7rem;
+  font-size: 0.7rem;
+  color: red;
+}
+
+.section {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  background-color: #fff;
+  flex-direction: column;
+  align-items: center; /* 수평 가운데 정렬 */
+}
+
+.communityTitle {
+  font-size: 1.2rem;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #817f7f;
+}
+
+.columns {
+  display: flex;
+  width: 100%;
+}
+
+.leftColumn,
+.rightColumn {
+  flex: 0.6;
+  padding: 1rem;
+}
+
+.leftColumn {
+  border-right: 1px solid #ddd;
+}
+
+.rightColumn {
+  flex: 0.4;
+  margin-left: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.rightImg {
+  width: 0.7rem;
+  height: 0.7rem;
+  line-height: 3.2rem;
+  margin-right: 0.2rem;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: normal;
+  src: url("./font/Pretendard-SemiBold.ttf") format("truetype");
+  /* src: url("./font/Pretendard-Medium.ttf") format("truetype"); */
+  /* src: url("./font/Pretendard-Regular.ttf") format("truetype"); */
+  /* src: url("./font/Pretendard-Light.ttf") format("truetype"); */
+  /* src: url("./font/PretendardVariable.ttf") format("truetype"); */
+}
+
+.rightTitle,
+.rightTitle > a {
+  font-family: "Pretendard";
+}
+
+.listItem {
+  padding: 0.7rem 0;
+  font-size: 1rem;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+
+.listItem span {
+  color: black;
+  font-family: "Pretendard";
+}
+
+.listItem .category {
+  color: red;
+  font-weight: bold;
+}
+
+.contentTitle {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.contentTitle:after,
+.titleSpan:after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: blue;
+  content: "";
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: translateY(10px);
+}
+
+.contentTitle:hover:after,
+.contentTitle:focus:after,
+.titleSpan:hover:after,
+.titleSpan:focus:after {
+  opacity: 0.2;
+  transform: translateY(5px);
+}
+
+.titleSpan {
+  cursor: pointer;
+  position: relative;
+}
+
+.category_btn {
+  display: flex;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.category_btn > button {
+  cursor: pointer;
+  background-color: white;
+  font-size: 1.1rem;
+}
+
+.flag {
+  width: 4rem;
+  margin-left: 1rem;
+}
+
+.category_btn .selected_btn {
+  color: red;
+  font-weight: bold;
+}
+
+.hot {
+  font-size: 0.8rem;
+  background-color: red;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  padding: 2px;
+  margin-right: 2rem;
+}
+
+.normal {
+  margin-right: 2rem;
+}
+
+.post {
+  display: flex;
+}
+
+/* 수정 */
+
+.bannerContainer {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bannerImage {
+  width: 100%;
+  height: auto;
+}
+
+.textOverlay {
+  position: absolute;
+  top: 18rem;
+  left: 20rem;
+  transform: translateY(-50%);
+  /* color: white; */
+  /* color: var(--primary-color); */
+  color: black;
+  background-color: rgba(255, 255, 255, 0.37);
+  z-index: 10;
+  text-align: left;
+
+  border-radius: 15px; /* 모서리 둥글게 */
+  box-shadow: 4px 4px 15px black;
+  padding: 2rem;
+}
+
+.textOverlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.textOverlay p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.spanColor {
+  color: var(--primary-color);
+}
+
+.button {
+  background-color: var(--primary-color);
+
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.spanHot {
+  color: red;
+  font-weight: bold;
+}
+
+/* 반응형 디자인 추가 */
+@media screen and (max-width: 480px) {
+  .main_banner {
+    width: 100%;
+    height: auto;
+  }
+
+  .textOverlay {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    padding: 1rem;
+  }
+
+  .textOverlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .textOverlay p {
+    font-size: 1rem;
+  }
+
+  .buttonContainer {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .container {
+    padding: 1rem;
+    margin-right: 1.5rem;
+  }
+
+  .section {
+    padding: 0.5rem;
+  }
+
+  .columns {
+    flex-direction: column;
+  }
+
+  .leftColumn,
+  .rightColumn {
+    flex: 1;
+    width: 100%;
+    padding: 0.5rem;
+    border-right: none;
+  }
+
+  .rightColumn {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .category_btn {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .category_btn > button {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .listItem {
+    font-size: 0.9rem;
+  }
+
+  .contentTitle {
+    font-size: 0.9rem;
+  }
+
+  .post {
+    flex-wrap: wrap;
+  }
+
+  .flag {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .replyCount {
+    width: 100%;
+    text-align: right;
+  }
+
+  .imageDiv img {
+    width: 100%;
+    height: auto;
+  }
+}

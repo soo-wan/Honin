@@ -1,0 +1,52 @@
+.place_container {
+  width: 90%;
+  margin: 1rem auto;
+  padding-bottom: 0.5rem;
+  background-color: var(--white);
+  color: var(--black);
+  font-weight: bold;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 1px 1px 5px var(--gray-2);
+  transition: 0.5s;
+}
+
+.place_container:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  transform: translate(5px, -5px);
+}
+
+.list_box {
+  width: 80%;
+  height: 7rem;
+  cursor: pointer;
+}
+
+.list_box * {
+  margin: 1rem;
+}
+
+.btn_box {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn_box button {
+  background-color: transparent;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn_box button:hover {
+  transform: scale(1.2);
+}
+
+/* .btn_box button img {
+  width: 120%;
+} */

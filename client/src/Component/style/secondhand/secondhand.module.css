@@ -1,0 +1,190 @@
+@import url("//fonts.googleapis.com/earlyaccess/notosanskr.css");
+
+.section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+  padding: 10px;
+  width: 100rem;
+  height: 70rem;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 블록 스타일 */
+.block {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+  position: relative; /* 위치 설정을 위한 relative */
+}
+
+.block button {
+  position: absolute; /* 절대 위치 지정 */
+  right: 16rem; /* 오른쪽으로부터 1.5rem 위치 (조정된 값) */
+  bottom: 1rem;
+  padding: 1rem 2rem; /* 버튼 패딩 조정 */
+  font-size: 1.2rem; /* 버튼 글꼴 크기 조정 */
+  border-radius: 0.5rem; /* 둥근 모서리 */
+  border: none; /* 기본 테두리 제거 */
+  background-color: var(--primary-color);
+  color: white; /* 버튼 글꼴 색상 */
+  cursor: pointer; /* 클릭 커서 */
+  transition: background-color 0.3s; /* 배경색 전환 효과 */
+}
+
+.block button:hover {
+  background-color: var(--secondary-color);
+}
+
+.gridcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridblock {
+  width: 80rem;
+  margin: 5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Responsive grid */
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 15rem;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.imageblock {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background: #f4f4f4;
+  overflow: hidden; /* To handle overflowed images */
+  border-radius: 4px; /* Rounded corners */
+  position: relative;
+}
+
+.imageblock img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover; /* Ensure image covers the block while maintaining aspect ratio */
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 4px; /* Rounded corners */
+  color: #aaa; /* Placeholder text color */
+  font-size: 1rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+  padding: 0.8rem;
+  margin-top: 1rem;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #777;
+  text-align: center;
+  height: 4.5rem;
+  line-height: 1.5rem; /* 텍스트 줄 높이 */
+  overflow: hidden; /* 넘치는 텍스트 숨기기 */
+  text-overflow: ellipsis; /* 넘치는 텍스트를 '...'으로 표시 */
+}
+
+.price {
+  font-size: 0.9rem;
+  color: black;
+  margin: 1rem;
+}
+
+.seller {
+  margin-top: 0.5em;
+  font-size: 0.9rem;
+  color: black;
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.count .like {
+  margin: 0.3rem;
+}
+
+.count .reply {
+  margin: 0.3rem;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  padding: 1rem;
+}
+
+.readcount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.readcount img {
+  width: 1rem;
+  margin: 0.3rem;
+}

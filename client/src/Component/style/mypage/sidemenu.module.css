@@ -1,0 +1,27 @@
+.sidebar {
+  width: 200px;
+  padding-right: 20px;
+  border-right: 1px solid #e0e0e0;
+  margin-top: 1.5rem;
+  margin-right: 2rem;
+  height: 100%;
+}
+
+.sidebarItem {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.sidebarTitle {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sidebarLink {
+  margin-left: 15px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 5px;
+}

@@ -1,0 +1,671 @@
+.refrigeratorContainer {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  margin-top: 3rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.headerOptions {
+  display: flex;
+  gap: 10px;
+}
+
+.headerOptions > span:hover {
+  background-color: #fcf6bd;
+}
+
+.headerOptions span {
+  font-size: 1.1rem;
+  color: #333;
+  background-color: #f5f5f5;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.itemList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.itemNameTitle {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.progressBar {
+  position: relative;
+  height: 6px;
+  background-color: #f0f0f0;
+  border-radius: 3px;
+}
+
+.bar {
+  height: 100%;
+  background-color: #33c47e;
+  border-radius: 3px;
+}
+
+.headerTilte {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #33c47e;
+}
+
+/* 중고거래 css 지울거 지워야함 */
+@import url("//fonts.googleapis.com/earlyaccess/notosanskr.css");
+
+.section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+  padding: 10px;
+  width: 100rem;
+  height: 70rem;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 블록 스타일 */
+.block {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+  position: relative; /* 위치 설정을 위한 relative */
+}
+
+.block button {
+  position: absolute; /* 절대 위치 지정 */
+  right: 16rem; /* 오른쪽으로부터 1.5rem 위치 (조정된 값) */
+  bottom: 1rem;
+  padding: 1rem 2rem; /* 버튼 패딩 조정 */
+  font-size: 1.2rem; /* 버튼 글꼴 크기 조정 */
+  border-radius: 0.5rem; /* 둥근 모서리 */
+  border: none; /* 기본 테두리 제거 */
+  background-color: var(--primary-color);
+  color: white; /* 버튼 글꼴 색상 */
+  cursor: pointer; /* 클릭 커서 */
+  transition: background-color 0.3s; /* 배경색 전환 효과 */
+}
+
+.block button:hover {
+  background-color: var(--secondary-color);
+}
+
+.gridcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridblock {
+  width: 80rem;
+  margin: 5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Responsive grid */
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  /* cursor: pointer; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 15rem;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.imageblock {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background: #f4f4f4;
+  overflow: hidden; /* To handle overflowed images */
+  border-radius: 4px; /* Rounded corners */
+  position: relative;
+}
+
+.imageblock img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover; /* Ensure image covers the block while maintaining aspect ratio */
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 4px; /* Rounded corners */
+  color: #aaa; /* Placeholder text color */
+  font-size: 1rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+  padding: 0.8rem;
+}
+
+.description {
+  font-size: 0.9rem;
+  /* color: #777; */
+  color: black;
+  text-align: center;
+  height: 2rem;
+}
+
+.price {
+  font-size: 0.9rem;
+  color: black;
+  margin: 1rem;
+}
+
+.seller {
+  margin-top: 0.5em;
+  font-size: 0.9rem;
+  color: black;
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.count .like {
+  margin: 0.3rem;
+}
+
+.count .reply {
+  margin: 0.3rem;
+}
+
+.transactionStatus {
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  background-color: gray;
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+.refrigeration {
+  /* background-color: rgba(51, 245, 148, 0.527); */
+  background-color: rgba(192, 6, 145, 0.562);
+}
+.freeze {
+  background-color: rgba(17, 0, 255, 0.521);
+}
+.roomtemperature {
+  background-color: rgba(255, 0, 0, 0.562);
+}
+
+.transactionStatus2 {
+  display: inline-block;
+  padding: 0.4rem 0.4rem;
+  background-color: gray;
+  color: white;
+  border-radius: 4px;
+  font-size: 15px;
+  margin-bottom: 1rem;
+  text-align: right;
+}
+
+.update {
+  background-color: var(--primary-color);
+  /* background-color: rgba(192, 127, 6, 0.562); */
+  cursor: pointer;
+}
+
+.delete {
+  background-color: var(--primary-color);
+  /* background-color: rgba(255, 0, 0, 0.562); */
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.update:hover {
+  background-color: var(--secondary-color);
+}
+
+.delete:hover {
+  background-color: var(--secondary-color);
+}
+
+.writeButtonDiv {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-right: 43rem;
+}
+
+.writeButton {
+  margin-top: 2rem;
+  padding: 0.7rem;
+  border: none; /* 버튼 테두리 제거 */
+  border-radius: 0.3rem; /* 둥근 모서리 */
+  background-color: var(--primary-color); /* 버튼 배경 색상 */
+  color: white; /* 버튼 글자 색상 */
+  font-size: 1rem; /* 글꼴 크기 */
+  cursor: pointer; /* 클릭 시 커서 변경 */
+}
+
+.writeButton:hover {
+  background-color: var(--secondary-color);
+}
+
+/* 드롭다운 메뉴 */
+.categoryDiv {
+  padding: 0.5rem;
+  width: 50%;
+}
+
+.categoryDateDiv {
+  display: flex;
+  align-items: center;
+}
+
+.dateDiv {
+  width: 50%;
+}
+
+.dateDiv > input:hover {
+  background-color: var(--secondary-color);
+}
+
+.category {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 4px var(--primary-color);
+}
+
+.title_inputDiv {
+  padding: 0.5rem;
+}
+
+.editor_textarea {
+  width: 100%;
+  resize: none;
+  height: 30%;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  outline-color: var(--primary-color);
+}
+
+/* 제목 input */
+.title_input {
+  width: 94%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline-color: var(--primary-color);
+}
+
+/* modal style */
+.modal_container {
+  width: 100%;
+  height: 100%;
+}
+.modal_header {
+  height: 10%;
+  margin: 0.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--gray);
+}
+
+.modal_header .cancel_btn {
+  font-size: 1rem;
+  margin-left: 1rem;
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.modal_header .store_name {
+  font-size: 1.2rem;
+}
+
+.modal_header .submit_btn {
+  font-size: 1rem;
+  margin-right: 1rem;
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.score_section {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--gray);
+  margin: 1rem;
+}
+
+.score_section .star_rating p {
+  font-size: 1rem;
+  text-align: center;
+  margin: 1rem 0 1.5rem;
+}
+
+.content_section {
+  /* width: 100%; */
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  /* align-items: center; */
+  /* margin-bottom: 3rem; */
+  margin-bottom: 1.5rem;
+}
+
+.content_section textarea {
+  width: 96%;
+  height: 100%;
+  resize: none;
+  margin: 0 auto;
+  outline: none;
+}
+
+.text_length {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 1rem;
+}
+
+.editor_textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 4px var(--primary-color);
+}
+
+.original_image {
+  display: flex;
+  width: 8rem;
+  height: 8rem;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.original_image > img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+}
+
+input[type="date"] {
+  border: none; /* 테두리 설정은 본인 맘대로 */
+  position: relative; /* 캘린더 아이콘을 클릭해야만 달력이 보이기 때문에 이 영역 자체를 제어하기 위해 설정 */
+  width: 90%;
+  padding: 10px;
+  background: url(../../../assets/images/myrefrigerator/Calendar.png) no-repeat
+    right 30px center / 35px auto;
+  /* 배경에 커스텀 아이콘을 넣어주자! x축은 오른쪽에서부터 10px 떨어지게 하고, y축은 가운데 정렬하고, width 35px에 height auto라는 크기를 부여한다. */
+  /* background-color:var(--secondary-color); */
+  /* background-color: #fcf6bdbd; */
+  background-color: white;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+/* 실제 캘린더 아이콘을 클릭하는 영역을 의미하는 선택자 */
+/* 이 영역을 확장해서 input의 어떤 곳을 클릭해도 캘린더를 클릭한 것과 같은 효과를 만들자! */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute; /* 이를 설정하기 위해 사전에 relative를 설정한 것이다. */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent; /* 배경은 투명하게 */
+  color: transparent; /* 글자도 투명하게! 이 두 설정을 통해 캘린더 아이콘을 사라지게 만든다. */
+  cursor: pointer;
+}
+
+/* type이 date인 input의 placeholder를 커스텀하기 위한 선택자 */
+/* 기본적으로 type date인 input은 placeholder가 먹히지 않기 때문이다! */
+input[type="date"]::before {
+  content: attr(
+    placeholder
+  ); /* input 태그의 placeholder라는 속성값을 가져와서 content로 사용한다. 보통은 placeholder보다는 data-placeholder라는 커스텀 속성을 만들어서 사용하시는 것 같다. */
+  width: 100%;
+  height: 100%;
+}
+
+/* input에 어떠한 유효값이 입력된 상태인지 확인하는 선택자 */
+/* 날짜를 선택하면 유효값이 입력된다. */
+/* 이 속성을 활용하고자 한다면 반드시 태그에 required 속성을 달아줘야한다. */
+input[type="date"]:valid::before {
+  display: none; /* 유효값이 입력된 경우 before에 있는 것을 사라지게 한다. 즉, placeholder를 사라지게 한다. */
+}
+
+/* 상단 */
+.refrigeratorContainer {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  margin-top: 3rem;
+}
+
+.refrigeratorTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #33c47e;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.button {
+  font-size: 1.1rem;
+  color: #333;
+  background-color: #f5f5f5;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 0 10px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #fcf6bd;
+}
+
+/* .active {
+  background-color: #33c47e;
+  color: white;
+} */
+
+.productList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.itemName {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.progressBar {
+  position: relative;
+  height: 6px;
+  background-color: #f0f0f0;
+  border-radius: 3px;
+}
+
+.bar {
+  height: 100%;
+  background-color: #33c47e;
+  border-radius: 3px;
+}
+
+.fnameTop {
+  display: inline-block;
+  width: 42%;
+  font-size: 1rem;
+}
+
+.exdateTop {
+  display: inline-block;
+  width: 42%;
+  font-size: 1rem;
+}
+
+.expiry {
+  /* position: absolute;
+  right: 0;
+  top: -25px;
+  background-color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  color: #333;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem; */
+  background-color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  color: #333;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+
+/* 만료된 경우 스타일 */
+.expiredBar {
+  height: 100%;
+  background-color: rgba(209, 20, 20, 0.562);
+  border-radius: 3px;
+}
+
+/* 일반 스타일 */
+.expiringBar {
+  height: 100%;
+  background-color: #33c47ea9;
+  border-radius: 3px;
+}
+
+.expiredDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  color: rgba(189, 6, 6, 0.979);
+  font-weight: bold;
+  background-color: yellow;
+  width: 100%;
+}
+
+.expiredDiv > span {
+  /* width: 100%; */
+}

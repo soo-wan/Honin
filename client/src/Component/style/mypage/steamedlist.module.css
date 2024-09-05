@@ -1,0 +1,145 @@
+.container {
+  display: flex;
+  padding: 20px;
+  align-items: baseline;
+  width: 100%;
+  margin-left: 40rem;
+  height: 100vh;
+  margin-top: 0.4rem;
+}
+
+.steamedListContainer {
+  width: 100vh;
+  /* background-color: #121212;
+    color: white; */
+  background-color: white;
+  color: black;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 24px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* .tabActive {
+    border-bottom: 2px solid orange;
+  } */
+
+.itemList {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* background-color: #1e1e1e; */
+  background-color: white;
+  padding: 15px;
+  /* border-radius: 8px; */
+  margin-bottom: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.item:hover {
+  background-color: #3a9c2d48;
+}
+
+.leftItem {
+  width: 90%;
+  display: flex;
+  cursor: pointer;
+}
+
+.itemImageWrapper {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+}
+
+.itemImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.itemDetails {
+  margin-left: 20px;
+  flex-grow: 1;
+}
+
+.itemTitle {
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.itemLocation,
+.itemPrice {
+  margin: 5px 0;
+  margin-bottom: 0.5rem;
+}
+
+.transactionStatus {
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: gray;
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.itemLikes {
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.likesIcon {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.likesCount {
+  /* margin-left: 5px;
+    font-size: 16px; */
+  color: red;
+}
+
+.onsale {
+  background-color: var(--primary-color);
+}
+
+.likesIconTop {
+  margin-bottom: 10rem;
+}
+
+.likeComent {
+  margin-top: 10rem;
+  font-size: 14px;
+}

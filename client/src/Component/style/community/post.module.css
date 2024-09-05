@@ -1,0 +1,109 @@
+.post {
+  width: 40%;
+  height: 11rem;
+  background-color: var(--white);
+  padding: 20px;
+  border-bottom: 1px solid rgb(192, 192, 192);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.post > div {
+  /* margin-bottom: 1rem; */
+}
+
+.post:hover {
+  background-color: var(--tertiary-color);
+  cursor: pointer;
+}
+
+.post:nth-child(1),
+.post:nth-child(2) {
+  border-top: 1px solid rgb(192, 192, 192);
+}
+
+.post:nth-child(2n + 1) {
+  border-right: 1px solid rgb(192, 192, 192);
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content {
+  height: 30%;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.writer {
+  font-size: 0.8rem;
+  color: #666;
+  vertical-align: middle;
+}
+
+.readcount {
+  display: flex;
+  justify-content: space-between;
+  height: 1.2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.readcount img {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
+.readcount .likes > div {
+  display: inline-block;
+  margin-right: 0.9rem;
+}
+
+.flag {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flag .hot {
+  font-size: 0.6rem;
+  background-color: red;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  padding: 0.3rem;
+  margin-right: 1rem;
+}
+
+.flag .now {
+  font-size: 0.6rem;
+  background-color: var(--primary-color);
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  padding: 0.3rem;
+  margin-right: 1rem;
+}
+
+.flag .space {
+  height: 1rem;
+}
+
+@media (max-width: 480px) {
+  .post {
+    width: 90%;
+  }
+
+  .post:hover {
+    background-color: var(--white);
+  }
+
+  .post:nth-child(2n + 1) {
+    border-right: none;
+  }
+}

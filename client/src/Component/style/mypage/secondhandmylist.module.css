@@ -1,0 +1,157 @@
+.container {
+  display: flex;
+  padding: 20px;
+  align-items: stretch;
+  width: 100%;
+  margin-left: 40rem;
+  height: 100vh;
+  margin-top: 0.4rem;
+}
+
+.contentWrapper {
+  flex: 3;
+  max-width: 43rem;
+  margin-top: 1.2rem;
+  overflow: auto;
+}
+
+.postWrapper {
+  display: flex;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.leftContent {
+  flex: 0.3;
+  flex-direction: column;
+  margin-left: 2rem;
+  max-width: 9rem;
+  height: 100%;
+  margin-top: 1.2rem;
+}
+
+.content2 {
+  flex: 3;
+  max-width: 50rem;
+  margin-top: 1.2rem;
+  overflow: auto;
+  margin-left: 1rem;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(87, 85, 85, 0.479);
+  max-width: 32rem;
+  cursor: pointer;
+  border: 0.1px solid rgba(128, 128, 128, 0.3);
+  height: 10rem;
+  margin-right: 1rem;
+}
+
+.rightContent2 {
+  flex: 1;
+  margin-left: 5rem;
+  max-width: 25rem;
+  height: 100%;
+  margin-top: 2.3rem;
+}
+
+.post {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(87, 85, 85, 0.479);
+  max-width: 32rem;
+  cursor: pointer;
+  border: 0.1px solid rgba(128, 128, 128, 0.3);
+}
+
+.content2:hover {
+  background-color: #3a9c2d48;
+}
+
+.postHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.category {
+  max-width: 5rem;
+  font-size: 14px;
+  color: #007bff;
+  background-color: #fff;
+  padding: 5px 15px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.267);
+  margin-bottom: 0.7rem;
+  text-align: center;
+}
+
+.postTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0.9rem;
+  cursor: pointer;
+}
+
+.postDate {
+  font-size: 14px;
+  color: #888;
+  text-align: right;
+}
+
+.imageDiv {
+  /* border: 3px solid black; */
+  width: 158px;
+  height: 158px;
+  margin-bottom: 20px;
+}
+
+.imageDiv > img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.replyCount {
+  color: red;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.finish {
+  color: red;
+}
+
+.bannerImg {
+  width: 100%;
+  height: 100%;
+  opacity: 0.75;
+}
+
+.bannerImg2 {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.leftContent {
+  display: flex;
+}
+
+.address {
+  font-size: 0.9rem;
+  margin-bottom: 0.9rem;
+}
+
+.itemImage {
+  width: 8rem;
+  height: 10rem;
+  object-fit: cover;
+}
+
+.bannerImg2 {
+  object-fit: cover;
+}

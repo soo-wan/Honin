@@ -1,0 +1,213 @@
+/* 슬라이드 패널 */
+.view_container {
+  width: 24%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid var(--primary-color);
+  background-color: var(--tertiary-color);
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  transition: 0.5s ease;
+}
+
+.view_open {
+  transform: translateX(96%);
+}
+
+.view_close {
+  transform: translateX(-96%);
+}
+
+/* 패널 헤더 */
+.panel_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 7%;
+  background-color: var(--primary-color);
+}
+
+.flex_col {
+  display: flex;
+  align-items: center;
+}
+
+.panel_header .panel_close_btn {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 1rem;
+  background-image: url("../../../assets/images/mystore/left_arrow.png");
+  background-size: 1.5rem;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.panel_header .panel_close_btn:hover {
+  transform: translateX(-5px);
+}
+
+.panel_header .place_name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.panel_header .write_btn button {
+  margin-right: 1rem;
+  padding: 0.3rem 0.7rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+  background-color: var(--white);
+  color: var(--primary-color);
+  cursor: pointer;
+  /* border-radius: 15px; */
+}
+
+.panel_header .write_btn button:hover {
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
+
+/* 패널 바디 */
+.container_box {
+  background-color: var(--white);
+  width: 100%;
+  height: 25%;
+  margin: 0 auto;
+  box-shadow: 1px 1px 3px var(--gray-2);
+  border-radius: 5px;
+  /* margin: 1rem; */
+  font-size: 1rem;
+}
+
+/* 별점 */
+.score_box {
+  margin: 1rem;
+}
+
+.star_box {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  /* 별 5개의 전체 너비 */
+  height: 16px;
+  /* 별 1개의 높이 */
+  background: url("../../../assets/images/mystore/empty_star.png") repeat-x;
+  /* 빈 별 이미지 */
+  background-size: contain;
+  /* 별 이미지가 잘리지 않게 조절 */
+}
+
+.star_inner {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: url("../../../assets/images/mystore/fill_star.png") repeat-x;
+  /* 채워진 별 이미지 */
+  background-size: contain;
+  /* 별 이미지가 잘리지 않게 조절 */
+  overflow: hidden;
+  /* 별 이미지를 벗어난 부분 숨기기 */
+}
+
+.avgscore {
+  margin-right: 0.3rem;
+}
+
+.review_count {
+  margin-left: 0.5rem;
+}
+
+/* info box */
+.info_box * {
+  margin: 1rem;
+}
+
+.category {
+  color: var(--gray-2);
+  font-size: 0.9rem;
+}
+
+.phone {
+  color: var(--primary-color);
+}
+
+.info_box .link {
+}
+
+.review_section {
+  height: 73%;
+  overflow-y: auto;
+}
+
+/* 후기 */
+.review_container {
+  background-color: var(--white);
+  width: 90%;
+
+  margin: 1rem auto;
+  box-shadow: 1px 1px 3px var(--gray-2);
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.review_header {
+  margin: 1rem;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+.score_container {
+  margin: 0 1rem;
+}
+
+.content_box {
+  height: 100%;
+  /* margin: 1rem; */
+  /* padding-bottom: 1rem; */
+  padding: 1rem;
+  line-height: 1.5rem;
+}
+
+.btn_box {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.edit_btn button {
+  margin-right: 0.5rem;
+  background-color: var(--white);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 0.1rem 0.5rem;
+  cursor: pointer;
+}
+
+.remove_btn button {
+  margin-right: 1rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: 1px solid var(--primary-color);
+  padding: 0.1rem 0.5rem;
+  cursor: pointer;
+}
+
+.edit_btn button:hover {
+  background-color: var(--tertiary-color);
+  border-color: var(--tertiary-color);
+}
+
+.remove_btn button:hover {
+  background-color: var(--tertiary-color);
+  border-color: var(--tertiary-color);
+  color: var(--primary-color);
+}

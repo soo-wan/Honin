@@ -1,0 +1,7 @@
+# dependencies
+/node_modules
+
+# API KEYS
+.env
+
+application.properties

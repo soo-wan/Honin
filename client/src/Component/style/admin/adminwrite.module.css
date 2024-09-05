@@ -1,0 +1,154 @@
+/* 전체 컨테이너 스타일 */
+.container {
+  display: flex;
+  width: 100vw; /* 화면 전체 너비 */
+  height: 100vh; /* 화면 전체 높이 */
+  overflow: hidden;
+  background-color: #f9f9f9; /* 배경 색상 */
+}
+
+/* 콘텐츠 영역 스타일 */
+.mainContent {
+  margin-left: 15rem; /* 서브메뉴 너비 */
+  flex: 1; /* 나머지 공간을 차지 */
+  padding: 2rem; /* 패딩 */
+  background-color: #fff;
+  overflow-y: auto; /* 콘텐츠가 넘칠 때 스크롤 */
+  display: flex;
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: flex-start; /* 위쪽에 정렬 */
+}
+
+/* 폼 컨테이너 스타일 */
+.formContainer {
+  width: 70%; /* 입력 필드와 버튼 너비 조정 */
+  max-width: 800px; /* 최대 너비 설정 (선택 사항) */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 수평 중앙 정렬 */
+}
+
+/* 제목 스타일 */
+.title {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* 폼 필드 스타일 */
+.field {
+  width: 100%; /* 필드 너비를 컨테이너에 맞춤 */
+  margin-bottom: 1rem;
+}
+
+.field label {
+  display: block;
+  font-size: 1rem;
+  color: var(--black);
+  margin-bottom: 0.5rem;
+}
+
+.field input,
+.field textarea {
+  width: 100%; /* 입력 필드 전체 너비 */
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1rem;
+  overflow-wrap: break-word; /* 긴 단어 줄바꿈 */
+  word-wrap: break-word; /* 긴 단어 줄바꿈 (IE 지원) */
+  box-sizing: border-box; /* 패딩을 포함한 너비/높이 계산 */
+}
+
+.field textarea {
+    resize: none;
+    height: 10rem; /* 기본 높이 설정 */
+    overflow-wrap: break-word; /* 긴 단어 줄바꿈 */
+    word-wrap: break-word;     /* 긴 단어 줄바꿈 (IE 지원) */
+    white-space: normal;
+}
+
+/* 파일 업로드 입력 스타일 */
+.field input[type="file"] {
+  width: 100%; /* 입력 필드 전체 너비 */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.imgDiv {
+  width: 20rem;
+}
+
+.imageDiv{
+  max-width: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 버튼 스타일 */
+.btn {
+  display: flex;
+  flex-direction: row;
+}
+
+.submitButton,
+.backButton {
+  margin: 1rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 1rem;
+}
+
+.submitButton:hover {
+  background-color: var(--white);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.submitButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.characterCount {
+  font-size: 0.9em;
+  color: #666; /* 기본 색상 */
+  margin-top: 5px;
+}
+
+.characterCount.warning {
+  color: #d9534f; /* 글자 수가 거의 찼을 때의 경고 색상 */
+}
+
+/* 이미지 미리보기 */
+.img_container {
+  width: 30rem;
+  height: 15rem;
+  border: 1px solid var(--gray-1);
+  /* overflow: hidden; */
+}
+
+.img_box {
+  width: 30rem;
+  height: 20rem;
+}
+
+.img_box img {
+  width: 30rem;
+  max-height: 20rem;
+  object-fit: contain;
+}
+
+.previewImage{
+  max-width: 30rem;
+}

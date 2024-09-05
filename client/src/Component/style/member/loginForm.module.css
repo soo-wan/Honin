@@ -1,0 +1,393 @@
+:root {
+  --primary-color: #4ea685;
+  --secondary-color: #98c9a3;
+  --tertiary-color: #edeec9;
+  --yongho-color: #87bfff;
+  --black: #000000;
+  --white: #ffffff;
+  --gray: #efefef;
+  --gray-1: #cfcfcf;
+  --gray-2: #757575;
+
+  --facebook-color: #4267b2;
+  --google-color: #db4437;
+  --twitter-color: #1da1f2;
+  --insta-color: #e1306c;
+  --kakao-color: #fee500;
+  --naver-color: #03c75a;
+}
+
+.container {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.col {
+  width: 50%;
+}
+
+.align_items_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.form_wrapper {
+  width: 100%;
+  max-width: 50rem;
+}
+
+.form {
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: 1.5rem;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: scale(0);
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.7s;
+}
+
+.form.sign_in {
+  width: 50%;
+}
+.form.sign_up {
+  display: flex;
+}
+
+.input_group {
+  position: relative;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.input_group.sign_up input:focus,
+.input_group.sign_in input:focus {
+  border: 0.125rem solid var(--primary-color);
+}
+
+.form button {
+  cursor: pointer;
+  width: 100%;
+  padding: 0.6rem 0;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--white);
+  outline: none;
+}
+
+.form p {
+  margin: 1rem 0;
+  font-size: 0.7rem;
+}
+
+.flex_col {
+  flex-direction: column;
+}
+
+.container.sign_in .form.sign_in,
+.container.sign_up .form.sign_up {
+  transform: scale(1);
+}
+
+.content_row {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 6;
+  width: 100%;
+}
+
+.text {
+  margin: 4rem;
+  color: var(--white);
+}
+
+.text h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin: 2rem 0;
+  transition: 1s ease-in-out;
+}
+
+.text p {
+  font-weight: 600;
+  transition: 1s ease-in-out;
+  transition-delay: 0.2s;
+}
+
+.img img {
+  width: 30vw;
+  transition: 1s ease-in-out;
+  transition-delay: 0.4s;
+}
+
+.text.sign_in h2,
+.text.sign_in p,
+.img.sign_in img {
+  transform: translateX(-250%);
+}
+
+.text.sign_up h2,
+.text.sign_up p,
+.img.sign_up img {
+  transform: translateX(250%);
+}
+
+.container.sign_in .text.sign_in h2,
+.container.sign_in .text.sign_in p,
+.container.sign_in .img.sign_in img,
+.container.sign_up .text.sign_up h2,
+.container.sign_up .text.sign_up p,
+.container.sign_up .img.sign_up img {
+  transform: translateX(0);
+}
+
+/* BACKGROUND */
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 300vw;
+  transform: translate(35%, 0);
+  background-image: linear-gradient(
+    -45deg,
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
+  );
+  transition: 1s ease-in-out;
+  z-index: 6;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-bottom-right-radius: max(50vw, 50vh);
+  border-top-left-radius: max(50vw, 50vh);
+}
+
+.container.sign_in::before {
+  transform: translate(0, 0);
+  right: 50%;
+}
+
+.container.sign_up::before {
+  transform: translate(100%, 0);
+  right: 50%;
+}
+
+/* join-form -------------------------------> */
+.input_group {
+  display: flex;
+}
+.input_group.sign_up input {
+  width: 60%;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  background-color: var(--gray);
+  border-radius: 0.5rem;
+  border: 0.125rem solid var(--white);
+  outline: none;
+}
+
+.with_btn {
+  width: 86%;
+}
+
+.flex_box_col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex_box_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flex_box_row input {
+  width: 40%;
+}
+
+.email_box {
+  width: 100%;
+}
+
+.email_box.email_input {
+  width: 80%;
+}
+
+.msg_box {
+  width: 60%;
+  color: blue;
+  font-size: 0.9rem;
+  /* flex: 1; */
+}
+
+.input_group .join_btn {
+  width: 40%;
+  box-shadow: 1px 1px 3px black;
+}
+
+.input_group .join_btn:active {
+  transform: translate(1px, 1px);
+  box-shadow: none;
+}
+
+.upload_container {
+  width: 74%;
+  height: 50%;
+}
+
+.form .submit_btn {
+  display: flex;
+  justify-content: center;
+  width: 86%;
+}
+
+.close_btn {
+  width: 100%;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: var(--white);
+}
+/* <----------------------------------------- */
+
+/* login-form ------------------------------>*/
+.input_group.sign_in input {
+  width: calc(100% - 3rem);
+  padding: 1rem 0 1rem 3rem;
+  font-size: 1rem;
+  background-color: var(--gray);
+  border-radius: 0.5rem;
+  border: 0.125rem solid var(--white);
+  outline: none;
+}
+.form .login_btn {
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+  width: 100%;
+  padding: 0.6rem 0;
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.input_form > input {
+  margin-bottom: 1rem;
+}
+
+.snslogin {
+  margin: 1rem 0;
+}
+
+.snslogin .kakao {
+  border: 2px solid var(--kakao-color);
+  background-color: var(--kakao-color);
+  color: var(--kakao-color);
+  font-weight: bold;
+}
+
+.kakao img {
+  width: 15%;
+}
+
+.snslogin .naver {
+  margin-top: 1rem;
+  border: 2px solid var(--naver-color);
+  background-color: var(--naver-color);
+  color: var(--white);
+}
+
+.naver img {
+  width: 15%;
+}
+
+.join_btn,
+.login_btn {
+  font-family: "Noto Sans KR";
+  /* font-weight: bold; */
+}
+/* <----------------------------------------- */
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 425px) {
+  .container::before,
+  .container.sign_in::before,
+  .container.sign_up::before {
+    height: 100vh;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    z-index: 0;
+    transform: none;
+    right: 0;
+  }
+
+  .container.sign_in .col.sign_up {
+    transform: translateY(100%);
+  }
+
+  .container.sign_in .col.sign_in,
+  .container.sign_up .col.sign_up {
+    transform: translateY(0);
+  }
+
+  .content_row {
+    align-items: flex-start !important;
+  }
+
+  .content_row .col {
+    transform: translateY(0);
+    background-color: unset;
+  }
+
+  .col {
+    width: 100%;
+    position: absolute;
+    padding: 2rem;
+    background-color: var(--white);
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    transform: translateY(100%);
+    transition: 1s ease-in-out;
+  }
+
+  .row {
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .form {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .text {
+    margin: 0;
+  }
+
+  .text p {
+    display: none;
+  }
+
+  .text h2 {
+    margin: 0.5rem;
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,34 @@
+.container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  margin-top: 0.6rem;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.custom_btn {
+  position: absolute;
+  width: 10rem;
+  height: 2.5rem;
+  bottom: 5rem;
+  left: 50%;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 30px;
+  z-index: 5;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .custom_btn:hover{
+    background-color: var(--secondary-color);
+    color: var(--white);
+} */
+
+.custom_btn img {
+  width: 1.2rem;
+  margin-right: 0.4rem;
+}

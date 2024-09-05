@@ -1,0 +1,84 @@
+.reply {
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.reply_layout {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.reply_btn {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.reply_menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid var(--primary-color);
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--white);
+  color: var(--primary-color);
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.reply_menu * {
+  height: 50%;
+  line-height: 2.5rem;
+}
+
+.reply_edit {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.reply_edit:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 10px 10px 0 0;
+}
+
+.reply_del:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 0 0 10px 10px;
+}
+
+.edit_input {
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.edit_input input {
+  width: 60%;
+  padding: 1rem 0 1rem 3rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+  background-color: var(--gray);
+  border-radius: 0.5rem;
+  border: 0.125rem solid var(--white);
+  outline: none;
+}
+
+.edit_input button {
+  width: 5rem;
+  height: 80%;
+  font-weight: bold;
+  background-color: var(--white);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.edit_input button:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}

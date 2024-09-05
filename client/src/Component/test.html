@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한글 메뉴</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        .menu-bar {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: white;
+        }
+        .menu-bar > .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        .menu-bar > .menu-item {
+            margin: 0 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .menu-bar > .menu-item:hover {
+            color: #007bff;
+        }
+        .menu-bar > .buttons {
+            display: flex;
+            margin-left: auto;
+        }
+        .menu-bar > .buttons > button {
+            margin-left: 10px;
+            padding: 5px 15px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            background-color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .menu-bar > .buttons > .signup {
+            background-color: #333;
+            color: white;
+            border: none;
+        }
+        .menu-bar > .buttons > button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-bar">
+        <div class="logo">홈</div>
+        <div class="menu-item">커뮤니티</div>
+        <div class="menu-item">소식지</div>
+        <div class="menu-item">우리동네맛집</div>
+        <div class="menu-item">중고거래</div>
+        <div class="buttons">
+            <button class="login">로그인</button>
+            <button class="signup">회원가입</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
+
+@font-face {
+  font-family: "CustomFont";
+  src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap")
+    format("truetype");
+}
+
+.content {
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.content:hover {
+  background-color: #fcf6bd;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  font-family: "CustomFont", "Malgun Gothic", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  min-height: 100vh;
+}
+
+.sidebar {
+  /* flex: 1;
+    padding: 1.2rem;
+    margin-top: 2.1rem; */
+
+  position: fixed;
+  top: 7rem;
+  left: 14rem;
+  height: 100%;
+  padding: 1.2rem;
+  /* overflow-y: auto;  */
+  border: none;
+  margin-left: 3rem;
+  /* background-color: white; */
+}
+
+.contentDiv {
+  width: 62rem;
+  /* overflow: auto; */
+  border-left: 1px solid #ddd;
+  margin-left: 23rem;
+}
+
+.title + p {
+  /* overflow: hidden; */
+  padding: 0.7rem 0;
+}
+
+.sidebar h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.sidebar p {
+  font-size: 14px;
+  color: #666;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  padding: 0.8rem 0;
+  font-size: 19px;
+  color: #333;
+  cursor: pointer;
+  margin-left: 1.2rem;
+}
+
+.sidebar nav ul li.active {
+  font-weight: bold;
+  color: rgb(190, 77, 77);
+}
+
+.content {
+  flex: 3;
+  padding: 1.2rem 0 0 1.2rem;
+}
+
+.post {
+  display: flex;
+  padding: 1.2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.post_rank {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 1.2rem;
+}
+
+.post_details {
+  flex: 1;
+}
+
+.post_author {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.7rem;
+}
+
+.post_author span {
+  font-weight: bold;
+}
+
+.title span {
+  font-weight: bold;
+  font-size: 17px;
+  padding: 0.7rem 0;
+  /* cursor: pointer; */
+}
+
+.post h3 {
+  margin: 0 0 0.7rem 0;
+  font-size: 18px;
+}
+
+.post p {
+  font-size: 14px;
+  color: #666;
+}
+
+.post_stats {
+  font-size: 12px;
+  color: #999;
+}
+
+.post_stats span {
+  margin-right: 0.6rem;
+}
+
+.sidebarDiv {
+  /* position: fixed;
+    top: 120px; 
+    left: 150px;  */
+  border: none;
+  margin-left: 3rem;
+  background-color: white;
+}
+
+.pClass {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.section {
+  width: 100%;
+}
+
+.imageDiv img {
+  width: 6.5rem;
+  height: 6.5rem;
+  /* cursor: pointer; */
+}
+
+.post_stats > span {
+  margin-right: 0.3rem;
+}
+
+.post_stats > img {
+  position: relative;
+  top: 0.125rem;
+  margin: 0;
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+/*
+.truncatedText {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;  //줄 수를 설정합니다 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5; // 줄 높이 설정 
+  }
+*/
+
+.ulClass > li > img {
+  position: relative;
+  top: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.ulClass > li > span {
+  margin-left: 0.8rem;
+}

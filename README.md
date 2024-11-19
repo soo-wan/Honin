@@ -55,20 +55,12 @@ Honin은 자취생의 다양한 요구(중고거래, 취업정보 등)에 대응
 ![image](https://github.com/user-attachments/assets/e648c2aa-c8ec-4c33-b5c7-c84b2f342de3)
 
 # 프로그램 화면 캡쳐
-![KakaoTalk_20241104_215009375_13](https://github.com/user-attachments/assets/765bdb81-5297-47fa-833a-3f4f933d287c)
-![KakaoTalk_20241104_215009375_12](https://github.com/user-attachments/assets/f11771ba-b9a9-4b7b-b17e-bd692d8f7604)
-![KakaoTalk_20241104_215009375_11](https://github.com/user-attachments/assets/8aaa333a-b416-456c-a901-9a6a314c8ed4)
-![KakaoTalk_20241104_215009375_10](https://github.com/user-attachments/assets/e92d421e-d10f-47d2-bf09-7e37919a3064)
-![KakaoTalk_20241104_215009375_09](https://github.com/user-attachments/assets/0e6594c1-7166-43c5-b576-db475817b4ac)
-![KakaoTalk_20241104_215009375_08](https://github.com/user-attachments/assets/426b8b7b-6390-4e2d-ab0b-7b6d2f5be518)
-![KakaoTalk_20241104_215009375_07](https://github.com/user-attachments/assets/c260450b-0f34-45bc-929b-a00ba1495bee)
-![KakaoTalk_20241104_215009375_06](https://github.com/user-attachments/assets/6284d984-0851-4cb9-a62f-b17bcb50f396)
-![KakaoTalk_20241104_215009375_05](https://github.com/user-attachments/assets/2369bc75-4829-4f61-968a-05947810d8ff)
-![KakaoTalk_20241104_215009375_04](https://github.com/user-attachments/assets/788d4d1a-0f99-4693-b83b-bb0c55a9fbaa)
-![KakaoTalk_20241104_215009375_03](https://github.com/user-attachments/assets/932a378b-8abf-4c49-a867-5fce7b4a3e36)
-![KakaoTalk_20241104_215009375_02](https://github.com/user-attachments/assets/701d7287-0419-49f5-ac57-f52455df3547)
-![KakaoTalk_20241104_215009375_01](https://github.com/user-attachments/assets/4e353bfd-7e58-4f96-9008-14aadd2d765b)
-![KakaoTalk_20241104_215009375](https://github.com/user-attachments/assets/bdc7cf00-2d83-41f5-acb9-1c7266d97aed)
+![로그인](https://github.com/user-attachments/assets/55b8e03a-9a69-4a07-bdb1-2acc7d9d97d6)
+![회원가입](https://github.com/user-attachments/assets/1281e8e1-1a7f-4261-8a02-be35b276fc75)
+![image](https://github.com/user-attachments/assets/5b2825d6-76f7-413e-8113-be5379596b5c)
+![Uploading image.png…]()
+
+
 
 
 

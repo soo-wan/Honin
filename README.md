@@ -58,7 +58,18 @@ Honin은 자취생의 다양한 요구(중고거래, 취업정보 등)에 대응
 ![로그인](https://github.com/user-attachments/assets/55b8e03a-9a69-4a07-bdb1-2acc7d9d97d6)
 ![회원가입](https://github.com/user-attachments/assets/1281e8e1-1a7f-4261-8a02-be35b276fc75)
 ![image](https://github.com/user-attachments/assets/5b2825d6-76f7-413e-8113-be5379596b5c)
-![Uploading image.png…]()
+
+![image](https://github.com/user-attachments/assets/0634ef47-c25b-44d9-bc24-9f0698308fdd)
+
+![image](https://github.com/user-attachments/assets/0df69d2c-9254-4ca1-9fc2-fa1a4fad5709)
+![image](https://github.com/user-attachments/assets/ca779f8e-4246-4b18-bd61-bb7a114f93ed)
+
+
+
+![image](https://github.com/user-attachments/assets/832929f8-5859-46a6-950b-a228602dff87)
+![image](https://github.com/user-attachments/assets/e2b251ad-ab23-440b-b7bf-ef91b08b9251)
+
+
 
 
 

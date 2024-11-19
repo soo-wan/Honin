@@ -54,7 +54,7 @@ Honin은 자취생의 다양한 요구(중고거래, 취업정보 등)에 대응
 ## USECASEDIAGRAM
 ![image](https://github.com/user-attachments/assets/e648c2aa-c8ec-4c33-b5c7-c84b2f342de3)
 
-👨‍💻 본인이 구현한 부분<br />
+# 👨‍💻 본인이 구현한 부분<br />
 ## 1. 전체적인 CSS 및 화면 구성<br />
 프로젝트 전반에 걸친 디자인: 모든 페이지에 대한 레이아웃 및 스타일링 구현<br />
 반응형 웹 디자인: 다양한 기기에서 일관된 사용자 경험 제공<br />

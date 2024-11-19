@@ -81,6 +81,8 @@ CSS 구현: 냉장고 페이지 스타일링 및 UX 최적화<br />
 3.사용자 설정 저장 및 수정 기능 제공<br />
 4.직관적인 레이아웃 디자인<br />
 
+<br />
+
 # 프로그램 화면 캡쳐
 ![image](https://github.com/user-attachments/assets/3a74f24d-125d-470a-8009-25e703f0bea3)
 

@@ -56,18 +56,43 @@ Honin은 자취생의 다양한 요구(중고거래, 취업정보 등)에 대응
 
 # 프로그램 화면 캡쳐
 ![로그인](https://github.com/user-attachments/assets/55b8e03a-9a69-4a07-bdb1-2acc7d9d97d6)
+<br />
 ![회원가입](https://github.com/user-attachments/assets/1281e8e1-1a7f-4261-8a02-be35b276fc75)
+<br />
 ![image](https://github.com/user-attachments/assets/5b2825d6-76f7-413e-8113-be5379596b5c)
-
+<br />
 ![image](https://github.com/user-attachments/assets/0634ef47-c25b-44d9-bc24-9f0698308fdd)
 
 ![image](https://github.com/user-attachments/assets/0df69d2c-9254-4ca1-9fc2-fa1a4fad5709)
+
 ![image](https://github.com/user-attachments/assets/ca779f8e-4246-4b18-bd61-bb7a114f93ed)
-
-
-
+<br />
 ![image](https://github.com/user-attachments/assets/832929f8-5859-46a6-950b-a228602dff87)
+<br />
 ![image](https://github.com/user-attachments/assets/e2b251ad-ab23-440b-b7bf-ef91b08b9251)
+<br />
+![image](https://github.com/user-attachments/assets/6ca90c95-b939-4a75-8b50-e2af47f35a70)
+
+![image](https://github.com/user-attachments/assets/ac4626a3-66af-4fc4-b446-9849b41753ab)
+
+![image](https://github.com/user-attachments/assets/423e7a8b-a0f9-4bc6-8958-43bb772e4b91)
+
+![image](https://github.com/user-attachments/assets/08e9baf2-68e7-45b6-86ae-3c35bdfaf62f)
+<br />
+![image](https://github.com/user-attachments/assets/f4de88e3-df15-4871-9252-3064ea19a90d)
+<br />
+![관리자1](https://github.com/user-attachments/assets/ff0125d2-c9a8-46a9-94ef-9cbc62a1691d)
+
+![관리자2](https://github.com/user-attachments/assets/a686c75a-a68f-4c8a-9a3f-0960965809bd)
+
+![관리자3](https://github.com/user-attachments/assets/119251ed-80f3-4091-96b3-fc323c77edef)
+
+
+
+
+
+
+
 
 
 
